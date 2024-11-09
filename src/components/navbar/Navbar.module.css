@@ -1,0 +1,88 @@
+/* Navbar.module.css */
+
+.navbar {
+    background-color: #f8f8f8;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  .navContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .menuButton {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .logoContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .brand {
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .desktopNav {
+    display: none;
+  }
+  
+  .navLink {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .authButtons {
+    display: none;
+  }
+  
+  .authButton {
+    background-color: #0070f3;
+    color: white;
+    padding: 8px 12px;
+    margin-left: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .mobileNav {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .mobileNavLink {
+    margin: 10px 0;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  @media (min-width: 768px) {
+    .menuButton {
+      display: none;
+    }
+  
+    .desktopNav, .authButtons {
+      display: flex;
+    }
+  
+    .authButtons {
+      align-items: center;
+    }
+  
+    .mobileNav {
+      display: none;
+    }
+  }
+  

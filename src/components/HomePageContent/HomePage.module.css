@@ -1,0 +1,109 @@
+/* HomePage.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      text-align: left;
+    }
+  }
+  
+  .content {
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  
+  .heading {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .heading {
+      font-size: 3rem;
+    }
+  }
+  
+  .highlight {
+    position: relative;
+  }
+  
+  .highlight::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    bottom: 0;
+    left: 0;
+    background-color: #ff4d4d; /* Red background */
+    z-index: -1;
+  }
+  
+  .subtitle {
+    color: #ff4d4d;
+  }
+  
+  .description {
+    color: #333;
+    margin-top: 1rem;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 768px) {
+    .buttonGroup {
+      flex-direction: row;
+    }
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0070f3;
+  }
+  
+  .primaryButton {
+    background-color: #ff4d4d;
+  }
+  
+  .primaryButton:hover {
+    background-color: #ff6666;
+  }
+  
+  .imageContainer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imageBox {
+    height: 200px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  @media (min-width: 768px) {
+    .imageBox {
+      height: 400px;
+    }
+  }
+  
